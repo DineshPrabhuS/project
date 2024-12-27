@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+
+        *, *::before, *::after {
+            box-sizing: inherit;
+        }
+
+        header {
+            background: white;
+            color: black;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px;
+        }
+
+        header img {
+            height: 50px;
+            width: auto;
+        }
+
+        header nav a {
+            padding: 10px 15px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        header nav a:hover {
+            color: #ff5722;
+        }
+
+        .explore-container {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .explore-container h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .explore-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .explore-item {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        .explore-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .explore-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .explore-details {
+            padding: 15px;
+        }
+
+        .explore-details h3 {
+            font-size: 1.5rem;
+            color: #000000;
+            margin-bottom: 8px;
+        }
+
+        .explore-details p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            .explore-items {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .explore-item {
+                width: 100%;
+            }
+
+            header nav a {
+                margin: 0 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo.png" alt="Logo">
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="cart.html">Cart</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+        <nav>
+            <a href="signup.html">Sign Up</a>
+            <a href="login.html">Log In</a>
+        </nav>
+    </header>
+
+    <div class="explore-container">
+        <h1>Explore Our Products</h1>
+        <div class="explore-items">
+            <div class="explore-item">
+                <img src="electronics.png" alt="Electronics">
+                <div class="explore-details">
+                    <h3>Electronics</h3>
+                    <p>Latest gadgets and devices.</p>
+                </div>
+            </div>
+            <div class="explore-item">
+                <img src="fashion.png" alt="Fashion">
+                <div class="explore-details">
+                    <h3>Fashion</h3>
+                    <p>Trendy clothing and accessories.</p>
+                </div>
+            </div>
+            <div class="explore-item">
+                <img src="furniture.png" alt="Furniture">
+                <div class="explore-details">
+                    <h3>Furniture</h3>
+                    <p>Stylish and comfortable furniture.</p>
+                </div>
+            </div>
+            <div class="explore-item">
+                <img src="toys.png" alt="Toys">
+                <div class="explore-details">
+                    <h3>Toys</h3>
+                    <p>Fun and educational toys for kids.</p>
+                </div>
+            </div>
+            <div class="explore-item">
+                <img src="grocery.png" alt="Grocery">
+                <div class="explore-details">
+                    <h3>Grocery</h3>
+                    <p>Fresh and quality grocery items.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Designed by: Dinesh Prabhu S (24004388)</p>
+    </footer>
+        
+</body>
+</html>
